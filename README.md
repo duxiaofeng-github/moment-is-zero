@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/duxiaofeng-github/moment-is-zero.svg?branch=master)](https://travis-ci.org/duxiaofeng-github/moment-is-zero)
+
 A plugin to recognize `0001-01-01T00:00:00Z` or `unix timestamp 0` for `moment`.
 
 Recognizing `0001-01-01T00:00:00Z` may convenient for some language like golang.
