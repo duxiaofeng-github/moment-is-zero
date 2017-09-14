@@ -1,6 +1,1 @@
-moment.fn.isZero = function() {
-    var obj = this.toObject();
-    var isGolangZero = obj.years === 1 && obj.months === 1 && obj.date === 1 && obj.hours === 0 && obj.minutes === 0 && obj.seconds === 0;
-    var isUnixZero = this.unix() === 0;
-    return isGolangZero || isUnixZero;
-};
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):e["moment-is-zero"]=n()}(this,function(){"use strict";var e=function(){var e=-62135596800===this.unix(),n=0===this.unix();return e||n};return"undefined"!=typeof moment&&(moment.fn.isZero=e),{install:function(n){n.fn.isZero=e}}});
